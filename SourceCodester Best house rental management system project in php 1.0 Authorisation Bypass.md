@@ -2,7 +2,7 @@
 
 ## NAME OF AFFECTED PRODUCT
 
-- est house rental management system project in php
+- Best house rental management system project in php
 
 ### Vendor Homepage
 
