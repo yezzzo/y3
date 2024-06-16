@@ -36,7 +36,8 @@
 
 - A SQL injection vulnerability was found in the "admin_class.php" file of the "Best house rental management system project in php" project. The cause of the issue is that an attacker injects malicious code from the parameter "username" and uses it directly for SQL queries to the database without verification. This allows an attacker to construct input values, thereby manipulating SQL queries and performing unauthorized operations.
 
-![image-20240616173045573](C:\Users\DELL\AppData\Roaming\Typora\typora-user-images\image-20240616173045573.png)
+![image-20240616173045573](https://github.com/yezzzo/y3/assets/75334106/0ef2adad-ff43-4088-818a-3b254dfe4c15)
+
 
 ### Impact
 
@@ -62,7 +63,7 @@
 
 We can see that the page response time is 5s，there is time-based blind.
 
-![image-20240616174420199](C:\Users\DELL\AppData\Roaming\Typora\typora-user-images\image-20240616174420199.png)
+![image-20240616174420199](https://github.com/yezzzo/y3/assets/75334106/b85e33a8-d176-4216-a320-e8db0796dac5)
 
 The following are screenshots of some specific information obtained from testing and running with the sqlmap tool:
 
@@ -90,8 +91,8 @@ Priority: u=1
 
 username=admin&password=pass
 ```
+![image-20240616175247067](https://github.com/yezzzo/y3/assets/75334106/950f80b6-8530-4590-9645-075546f09988)
 
-![image-20240616175247067](C:\Users\DELL\AppData\Roaming\Typora\typora-user-images\image-20240616175247067.png)
 
 
 
